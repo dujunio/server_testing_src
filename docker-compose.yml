@@ -1,0 +1,16 @@
+#服务器对比实测脚本
+
+version: '3.8'
+
+services:
+  app:
+    image: dujunio/server-testing
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2G
+    volumes:
+      - ./result:/server_testing/result
+    tty: true
+    container_name: server-testing

@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  server-testing:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: dujunio/server-testing
